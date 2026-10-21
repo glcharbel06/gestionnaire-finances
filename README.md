@@ -24,5 +24,5 @@ python3 database.py
 Feuille de route
 - [x] Initialisation de la base SQLite et modélisation relationnelle
 - [x] Gestion des transactions et catégorisation (Revenus, Charges obligatoires, Dépenses variables)
-- [ ] Calcul des agrégats mensuels (get_summary)
+- [x] Calcul des agrégats mensuels (get_summary)
 - [ ] Moteur de diagnostic et d'alertes (diagnose)
