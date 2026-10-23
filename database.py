@@ -61,4 +61,18 @@ print("Revenus :", revenus)
 print("Dépenses fixes :", D_fixe)
 print("Dépenses variables :", D_variable)
 
-   
+def diagnose():
+    revenus, d_fixe, d_variable = get_summary
+    reste = revenus - d_fixe - d_variable
+    ratio_fixe = (d_fixe / revenus) * 100
+    if reste < 0:
+        print("Alerte : situation de déficit !")
+    elif ratio_fixe > 50:
+        print("Alerte : charges fixes trop élevées (> 50 %) !")
+    elif taux_epargne < 10:
+        print("Recalibrage : capacité d'épargne faible (< 10 %) !")
+    else:
+        print("Optimisation : budget sain et bonne capacité d'épargne !")
+
+diagnose()
+
